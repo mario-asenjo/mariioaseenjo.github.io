@@ -2,7 +2,7 @@
 
 ## enumeration
 
-First of all we need to `ping` the machine to see if it's alive.
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=First of all we need to `ping` the machine to see if it's alive.) `#f03c15`
 
 ```
 root@as3diosMachine:~# ping -c 1 10.129.99.35
