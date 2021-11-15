@@ -49,34 +49,34 @@ Exploiting Zabbix 5.0 and mysql.
 >
 >
 >>           |------| Gobuster Directory Search |------|
->
-> ```
->
-> root@as3diosMachine:~/Desktop/HTB/Labs/Shibboleth# gobuster dir -u http://shibboleth.htb/ -w /usr/share/wordlists/dirbuster/directory-list-
-> 2.3-medium.txt -t 50
-> ===============================================================
-> Gobuster v3.1.0
-> by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-> ===============================================================
-> [+] Url:                     http://shibboleth.htb/
-> [+] Method:                  GET
-> [+] Threads:                 50
-> [+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-> [+] Negative Status codes:   404
-> [+] User Agent:              gobuster/3.1.0
-> [+] Timeout:                 10s
-> ===============================================================
-> 2021/11/14 23:47:28 Starting gobuster in directory enumeration mode
-> ===============================================================
-> /assets               (Status: 301) [Size: 317] [--> http://shibboleth.htb/assets/]
-> /forms                (Status: 301) [Size: 316] [--> http://shibboleth.htb/forms/] 
-> Progress: 3525 / 220561 (1.60%)                                                   ^C
-> [!] Keyboard interrupt detected, terminating.
->                                                                                    
-> ===============================================================
-> 2021/11/14 23:47:45 Finished
-> ===============================================================
-> ```
+>>
+>> ```
+>>
+>> root@as3diosMachine:~/Desktop/HTB/Labs/Shibboleth# gobuster dir -u http://shibboleth.htb/ -w /usr/share/wordlists/dirbuster/directory-list-
+>> 2.3-medium.txt -t 50
+>> ===============================================================
+>> Gobuster v3.1.0
+>> by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+>> ===============================================================
+>> [+] Url:                     http://shibboleth.htb/
+>> [+] Method:                  GET
+>> [+] Threads:                 50
+>> [+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+>> [+] Negative Status codes:   404
+>> [+] User Agent:              gobuster/3.1.0
+>> [+] Timeout:                 10s
+>> ===============================================================
+>> 2021/11/14 23:47:28 Starting gobuster in directory enumeration mode
+>> ===============================================================
+>> /assets               (Status: 301) [Size: 317] [--> http://shibboleth.htb/assets/]
+>> /forms                (Status: 301) [Size: 316] [--> http://shibboleth.htb/forms/] 
+>> Progress: 3525 / 220561 (1.60%)                                                   ^C
+>> [!] Keyboard interrupt detected, terminating.
+>>                                                                                    
+>> ===============================================================
+>> 2021/11/14 23:47:45 Finished
+>> ===============================================================
+>> ```
 >
 >> We have found `/assets` and `/forms`, which is going to give us nothing but headaches. But good to try and see errors, even a possible Directory Transversal,
 >> which I have been inable to exploit. But the deal comes here:
