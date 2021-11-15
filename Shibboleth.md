@@ -5,26 +5,26 @@
 Exploiting Zabbix 5.0 and mysql.
 
 
-## Enumeration
-
+> ## Enumeration
+>
 > First of all we need to `ping` the machine to see if it's alive.
-
-```
-root@as3diosMachine:~# ping -c 1 10.129.99.35
-PING 10.129.99.35 (10.129.99.35) 56(84) bytes of data.
-64 bytes from 10.129.99.35: icmp_seq=1 ttl=63 time=38.8 ms
-
---- 10.129.99.35 ping statistics ---
-1 packets transmitted, 1 received, 0% packet loss, time 0ms
-rtt min/avg/max/mdev = 38.839/38.839/38.839/0.000 ms
-root@as3diosMachine:~# 
-
-```
-
-
+>
+> ```
+> root@as3diosMachine:~# ping -c 1 10.129.99.35
+> PING 10.129.99.35 (10.129.99.35) 56(84) bytes of data.
+> 64 bytes from 10.129.99.35: icmp_seq=1 ttl=63 time=38.8 ms
+>
+> --- 10.129.99.35 ping statistics ---
+> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
+> rtt min/avg/max/mdev = 38.839/38.839/38.839/0.000 ms
+> root@as3diosMachine:~# 
+>
+> ```
+>
+>
 > Now we are going to search for open ports in the server with `Nmap`.
-
-```
+>
+> ```
 root@as3diosMachine:~/Desktop/HTB/Labs/Shibboleth# nmap -sCV -p80 10.129.99.35 -oN nmap/targeted
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-11-14 23:42 GMT
 Nmap scan report for 10.129.99.35
@@ -38,7 +38,7 @@ Service Info: Host: shibboleth.htb
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 7.97 seconds
-```
+>```
 
 
 So we have a web server, running `Apache 2.4.41`, and we have a dns to add to the `/etc/hosts`.
