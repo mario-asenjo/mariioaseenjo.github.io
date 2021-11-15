@@ -45,7 +45,7 @@ In this moment before running the browser to check the web, I'm starting to enum
 this machine, so we are going to use `wfuzz` and `gobuster` to do this :
 
 
->            |------| `gobuster` Directory Search |------|
+>            |------| Gobuster Directory Search |------|
 
 ```
 
@@ -79,6 +79,6 @@ We have found `/assets` and `/forms`, which is going to give us nothing but head
 which I have been inable to exploit. But the deal comes here:
 
 
->            |------| `wfuzz` Virtual Host Discovery |------|
+>            |------| Wfuzz Virtual Host Discovery |------|
 
 
