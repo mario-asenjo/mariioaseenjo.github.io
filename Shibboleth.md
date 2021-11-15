@@ -1,12 +1,14 @@
+
 # Shibboleth WriteUp - Author As3di0
+
 
 Exploiting Zabbix 5.0 and mysql.
 
 
-
 ## Enumeration
 
-First of all we need to `ping` the machine to see if it's alive.
+> First of all we need to `ping` the machine to see if it's alive.
+
 ```
 root@as3diosMachine:~# ping -c 1 10.129.99.35
 PING 10.129.99.35 (10.129.99.35) 56(84) bytes of data.
@@ -20,7 +22,7 @@ root@as3diosMachine:~#
 ```
 
 
-Now we are going to search for open ports in the server with `Nmap`.
+> Now we are going to search for open ports in the server with `Nmap`.
 
 ```
 root@as3diosMachine:~/Desktop/HTB/Labs/Shibboleth# nmap -sCV -p80 10.129.99.35 -oN nmap/targeted
@@ -275,7 +277,7 @@ Stopped: Mon Nov 15 01:09:02 2021
 ```
 So we have now credentials for the web : 
 
-** Administrator : ilovepumkinpie1 **
+**Administrator : ilovepumkinpie1**
 
 ## FootHold
 
