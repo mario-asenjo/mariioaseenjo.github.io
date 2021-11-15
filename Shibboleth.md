@@ -281,18 +281,16 @@ Exploiting Zabbix 5.0 and mysql.
 >>
 >>```
 >
->>So we have now credentials for the web : 
+>> So we have now credentials for the web : 
 >>
->> **Administrator : ilovepumkinpie1**
+>> Administrator : ilovepumkinpie1
 ---
 >> ## FootHold
 >
 >> Log in the web server
-
-For this we are going to try and log in to that account in all the three login pannels we have.
-
-Trying this we find out that only monitor.shibboleth.htb allow us to log in as Administrator.
-
-So we log in, and start to see what functionalities we could exploit.
-
-
+>>
+>> For this we are going to try and log in to that account in all the three login pannels we have.
+>>
+>> Trying this we find out that only monitor.shibboleth.htb allow us to log in as Administrator.
+>>
+>> So we log in, and start to see what functionalities we could exploit.
