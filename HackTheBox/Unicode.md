@@ -36,7 +36,7 @@
 > # Nmap done at Sun Dec  5 13:33:14 2021 -- 1 IP address (1 host up) scanned in 10.12 seconds
 > ```
 > Now we know there is a web server running under port 80 running `nginx 1.18.0`, so we are going to enumerate that now.
-[Image from Hackmedia's home page](/Images/Unicode/hackmediaHomePage.png)
+> ![](/Images/Unicode/hackmediaHomePage.png)
 > 
 > ![](/Images/etcHostsHackmedia)
 > 
