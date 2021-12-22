@@ -39,6 +39,20 @@
 >
 >
 > ![Página principal de hackmedia.htb](/Images/Unicode/hackmediaHomePage.png)
+>
+> We are going to register a new account so we can check what kind of content and access we have on the server.
+> In order to do this we are going to click `Register` from the upper menu in the home page.
+>
+> ![](/Images/Unicode/hackmediaRegistro.png)
+> 
+> Inmediately after creating a new account, we'll be redirected to the `/login` page, where we'll write the credentials we have just created in order to complete login.
+> 
+> ![](/Images/Unicode/hackmediaLogin.png)
+> 
+> After login, we'll be redirected to `/dashboard` , where we can check the 
+> 
+> ![](/Images/Unicode/hackmediaDashboard.png)
+> 
 > 
 > ![](/Images/etcHostsHackmedia)
 > 
