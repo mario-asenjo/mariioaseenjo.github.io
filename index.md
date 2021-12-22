@@ -9,8 +9,9 @@
 >
 > [Unicode Writeup - HackTheBox](/Unicode.md)
 
-
 > ## Try Hack Me Rooms Writeups
+> 
 > [RootMe Writeup - Try Hack Me](/RootMe.md)
-> [AnotherOne]
+> 
+> [AnotherOne](/Algo.md)
 > 
