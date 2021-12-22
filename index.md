@@ -3,11 +3,11 @@
 
 > ## Hack the Box Writeups
 >
-> [Shibboleth WriteUp - HackTheBox](/Shibboleth.md)
+> [Shibboleth WriteUp - HackTheBox](/HackTheBox/Shibboleth.md)
 > 
-> [Pikaboo Writeup - HackTheBox](/Pikaboo.md)
+> [Pikaboo Writeup - HackTheBox](/HackTheBox/Pikaboo.md)
 >
-> [Unicode Writeup - HackTheBox](/Unicode.md)
+> [Unicode Writeup - HackTheBox](/HackTheBox/Unicode.md)
 
 > ## Try Hack Me Rooms Writeups
 > 
