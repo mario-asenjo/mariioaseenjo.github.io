@@ -71,7 +71,7 @@
 > 
 > ![](/Images/Unicode/hackmediaCookie.png)
 > 
-> This is out cookie, whick translated into readable json is....
+> This is our cookie, which translated into readable json is....
 > 
 > ![](/Images/Unicode/jwtDefaultCookie.png) 
 >
