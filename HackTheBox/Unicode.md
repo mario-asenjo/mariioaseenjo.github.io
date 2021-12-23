@@ -110,7 +110,7 @@
 > 
 > ![](/Images/Unicode/jwkN.png)
 > 
-> ’n’ : modulus value for the RSA public key.
+>> ’n’ : modulus value for the RSA public key.
 >
 > This is the crafted file, which we are going to serve with `python3`.
 > 
