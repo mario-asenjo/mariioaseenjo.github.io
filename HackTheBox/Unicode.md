@@ -38,7 +38,9 @@
 > Now we know there is a web server running under port 80 running `nginx 1.18.0`, so we are going to enumerate that now, as nmap is telling me the title of the web, I'm going to add `hackmedia.htb` to my `/etc/hosts`.
 > 
 > ![](/Images/Unicode/etcHostHackmedia.png)
->
+> 
+> This is the home page for the web server....
+> 
 > ![](/Images/Unicode/hackmediaHomePage.png)
 >
 > We are going to register a new account so we can check what kind of content and access we have on the server.
