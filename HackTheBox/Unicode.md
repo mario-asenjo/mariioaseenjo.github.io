@@ -80,8 +80,12 @@
 > If we search for jku we find this statement...
 >> The “jku” (Json Web Key Set URL) Header Parameter is a URI that refers to a resource for a set of JSON-encoded public keys, one of which corresponds to the key used to digitally sign the JWS (JSON Web Signature).
 >
-> So this jky is pointing somewhere in hackmedia's server, if we try to reach this resource we get the following....
+> So this jku is pointing somewhere in hackmedia's server, if we try to reach this resource we get the following....
 > 
 > ![](/Images/Unicode/staticJwks.png)
+>
+> This is telling us that we need to serve our own jku, which will contain our public keys so the server thinks we are admin, as our petition is going to get signed as valid.
+> 
+> So first, we'll need to create a json web key, and we are going to use [https://mkjwk.org/]()
 >
 >
