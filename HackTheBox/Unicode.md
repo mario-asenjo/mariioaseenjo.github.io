@@ -105,6 +105,22 @@
 > 
 > ![](/Images/Unicode/jwtMitad.png)
 > 
+> Now we have signed the token, but we still to change the jku. As hackmedia.htb is the one allow listed address in which the token is going to be verified, we will craft the jku from this address, redirecting it to our machine in which we are going to be hosting a web server serving a jwks.json file
+> We are going to save the content of hackmedia.htb/static/jwks.json into a file, and we are going to change the "n" parameter, inserting in it the value from the right column from [mkjwk](https://mkjwk.org/), which is:
 > 
-> Now we have the keys to insert in the blue part of our Json Web Token (jwt.io), and continue to finish signing our fake jwk!
+> ![](/Images/Unicode/jwkN.png)
 > 
+> ’n’ : modulus value for the RSA public key.
+>
+> This is the crafted file, which we are going to serve with `python3`.
+> 
+> ![](/Images/Unicode/jwksLocal.png)
+> 
+> Now we only need to modify the username and the jku to redirect our machine for hackmedia to search for the `jwks.json` file in our attacker's machine.
+> 
+> This is the crafted json web token we need in order to impersonate admin in the webserver:
+> 
+> ![](/Images/Unicode/jwtFull.png)
+> 
+> 
+> a
