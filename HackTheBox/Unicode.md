@@ -90,10 +90,21 @@
 >
 > ![](/Images/Unicode/jwksCreation.png)
 >
-> So we have now three different keys, we are going to copy the one on the left side, and we are going to use another resource which is [jwk to pem](https://8gwifi.org/jwkconvertfunctions.jsp)
+> So we have now three different keys, we are going to copy the one on the left side, and we are going to use another resource which is [jwk to pem](https://8gwifi.org/jwkconvertfunctions.jsp).
 > Now we paste here the copied values and tell it to convert it into a public and a private key.
 >  
 > ![](/Images/Unicode/jwkToPem.png)
 >
+> We click "Submit", and we have generated one public and one private key, for us to be able to sign our json web token.
+> 
+> This are the results:
+> 
+> ![](/Images/Unicode/jwkGeneratedKeys.png)
+> 
+> Now that we have the keys, we are going to insert them into the "Verify signature" section in `Jwt.io` like so:
+> 
+> ![](/Images/Unicode/jwtMitad.png)
+> 
+> 
 > Now we have the keys to insert in the blue part of our Json Web Token (jwt.io), and continue to finish signing our fake jwk!
 > 
