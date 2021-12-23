@@ -86,6 +86,8 @@
 >
 > This is telling us that we need to serve our own jku, which will contain our public keys so the server thinks we are admin, as our petition is going to get signed as valid.
 > 
-> So first, we'll need to create a json web key, and we are going to use [https://mkjwk.org/]()
+> So first, we'll need to create a json web key, and we are going to use [mkjwk](https://mkjwk.org/), which is a JSON Web Key Generator.
+>
+> ![](/Images/Unicode/jwksCreation.png)
 >
 >
