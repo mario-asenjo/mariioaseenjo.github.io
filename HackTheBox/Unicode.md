@@ -48,7 +48,7 @@
 >
 > ![](/Images/Unicode/hackmediaRegistro.png)
 > 
-> Inmediately after creating a new account, we'll be redirected to the `/login` page, where we'll write the credentials we have just created in order to complete login.
+> Inmediately after creating a new account, we'll be redirected to the `/login` page, where we'll rewrite the credentials we have just created in order to complete login.
 > 
 > ![](/Images/Unicode/hackmediaLogin.png)
 > 
@@ -66,4 +66,22 @@
 > 
 > ![](/Images/Unicode/hackmediaUpload.png)
 > 
+> I've tried everything with the upload page, but nothing works. I guess the server isn't executing the file I'm uploading so this is nonesense.
+> So suddenly I figured out that we have a cookie! Actually a JWT, so we are going to check it out.
 > 
+> ![](/Images/Unicode/hackmediaCookie.png)
+> 
+> This is out cookie, whick translated into readable json is....
+> 
+> ![](/Images/Unicode/jwtDefaultCookie.png) 
+>
+> So as we can see, we have several fields, but we have special interest in jku and the keys down below (in blue).
+> 
+> If we search for jku we find this statement...
+>> The “jku” (Json Web Key Set URL) Header Parameter is a URI that refers to a resource for a set of JSON-encoded public keys, one of which corresponds to the key used to digitally sign the JWS (JSON Web Signature).
+>
+> So this jky is pointing somewhere in hackmedia's server, if we try to reach this resource we get the following....
+> 
+> ![](/Images/Unicode/staticJwks.png)
+>
+>
