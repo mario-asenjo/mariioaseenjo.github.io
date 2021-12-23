@@ -5,7 +5,7 @@
 
 > # Enueration
 > We start sending a ICMP packet to the machine with `ping`.
-> ```
+> ```bash
 > PING 10.129.180.130 (10.129.180.130) 56(84) bytes of data.
 > 64 bytes from 10.129.180.130: icmp_seq=1 ttl=63 time=41.2 ms
 >
@@ -15,7 +15,7 @@
 > ```
 > So we know the machine is alive. We can start enumerating open ports in the machine, we do this with `nmap`.
 >
-> ```
+> ```bash
 > # Nmap 7.92 scan initiated Sun Dec  5 13:33:04 2021 as: nmap -sCV -p22,80 -oN nmap/targeted 10.129.96.111
 > Nmap scan report for 10.129.96.111
 > Host is up (0.072s latency).
@@ -35,8 +35,9 @@
 > Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 > # Nmap done at Sun Dec  5 13:33:14 2021 -- 1 IP address (1 host up) scanned in 10.12 seconds
 > ```
-> Now we know there is a web server running under port 80 running `nginx 1.18.0`, so we are going to enumerate that now.
->
+> Now we know there is a web server running under port 80 running `nginx 1.18.0`, so we are going to enumerate that now, as nmap is telling me the title of the web, I'm going to add `hackmedia.htb` to my `/etc/hosts`.
+> 
+> ![](/Images/Unicode/etcHostsHackmedia.png)
 >
 > ![Página principal de hackmedia.htb](/Images/Unicode/hackmediaHomePage.png)
 >
@@ -49,10 +50,18 @@
 > 
 > ![](/Images/Unicode/hackmediaLogin.png)
 > 
-> After login, we'll be redirected to `/dashboard` , where we can check the 
+> After login, we'll be redirected to `/dashboard` , where we can check the things we can do to interactuate with the server.
 > 
 > ![](/Images/Unicode/hackmediaDashboard.png)
 > 
+> In this case we have three valid options, "Pricing, Upload and Logout".
+>
+> ![](/Images/Unicode/hackmediaOpciones.png)
 > 
-> ![](/Images/etcHostsHackmedia)
+> We can check manually each of the options, getting the next sites as a response of each of the options.
+>  
+> ![](/Images/Unicode/hackmediaPricing.png)
+> 
+> ![](/Images/Unicode/hackmediaUpload.png)
+> 
 > 
