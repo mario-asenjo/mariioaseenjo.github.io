@@ -74,7 +74,9 @@
 > This is our cookie, which translated into readable json is....
 > 
 > ![](/Images/Unicode/jwtDefaultCookie.png) 
->
+
+> # Token Modification 
+> 
 > So as we can see, we have several fields, but we have special interest in jku and the keys down below (in blue).
 > 
 > If we search for jku we find this statement...
@@ -122,5 +124,16 @@
 > 
 > ![](/Images/Unicode/jwtFull.png)
 > 
+> Now we can copy this new token and insert it into our auth field in the cookies from hackmedia.htb.
 > 
-> a
+> When we do this we refresh the webpage and Boom! 
+> 
+> ![](/Images/Unicode/hackmediaNewDashboard.png)
+>
+> As you can see, we get a hit to our python server, getting the jwks.json file we have created, so the token is working correctly, and in our browser we see a new dashboard, with some new options to check.
+> 
+> There we have it! We are now logged in as admin user, let's check what can we do as admin users, and try to get that initial foothold on the machine!
+ 
+> # Foothold
+>
+> 
