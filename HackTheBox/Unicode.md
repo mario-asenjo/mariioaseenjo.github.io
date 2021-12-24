@@ -136,4 +136,35 @@
  
 > # Foothold
 >
+> We notice in the left menu, we have two saved reports, if we click one of them we are going to be redirected to, for example:
+>
+> ![](/Images/Unicode/monthly1.png)
 > 
+> As we can see it's searching for some sort of file in the server, we could try to get LFI this way but....
+>
+> ![](/Images/Unicode/monthlyTryLFI.png)
+> ![](/Images/Unicode/monthlyTryFailed.png)
+>
+> As we can see the server applys input filtering so we are going to search for a way to bypass this filtering.
+> Trying common ways like inserting `....//....//....//....//etc/paswdd` doesn't give us the file we want so, I've started searching for information on filtering bypass, and found this resource: [HackTricks Unicode Nomalization Vuln](https://book.hacktricks.xyz/pentesting-web/unicode-normalization-vulnerability).
+> Here they tell us that different appearence unicode's characters, mean in binary code the same, so we can tell the browser to search for example for : `︰(U+FE30) in the form of	"︰/︰/︰/etc/passwd"`	and the server will respond with the value for `"../../../etc/passwd"`.
+> If we try and hit this, we will be able to see the server contents!
+> 
+> ![](/Images/Unicode/searchLFI.png)
+> ![](/Images/Unicode/LFIComplete.png)
+>
+> As we can see we get the `/etc/passwd`file from the server checking that the only user with a bash shell is `coder`.
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> a
