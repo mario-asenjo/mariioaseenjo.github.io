@@ -151,7 +151,7 @@
 > If we try and hit this, we will be able to see the server contents!
 > 
 > ![](/Images/Unicode/searchLFI.png)
-> ![](/Images/Unicode/LFIComplete.png)
+> ![](/Images/Unicode/LFICompleto.png)
 >
 > As we can see we get the `/etc/passwd`file from the server checking that the only user with a bash shell is `coder`.
 > 
