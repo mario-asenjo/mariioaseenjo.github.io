@@ -153,17 +153,23 @@
 > ![](/Images/Unicode/searchLFI.png)
 > ![](/Images/Unicode/LFICompleto.png)
 >
-> As we can see we get the `/etc/passwd`file from the server checking that the only user with a bash shell is `coder`.
+> As we can see we get the `/etc/passwd`file from the server checking that the only user with a bash shell is `code`.
 > 
+> Taking into account that this is a nginx server, and after trying to fuzz the possible LFI files we could access, I checked the default files for nginx and found one that actually worked, `/etc/nginx/sites-available/default`.
 > 
+> ![](/Images/Unicode/sitesAvailable.png)
 > 
+> ![](/Images/Unicode/sitesAvailable.png)
+> As we can see we have a password change for a user, and a file containing this change, located in `/home/code/coder/db.yaml`, so we are going to check that resource....
 > 
+> ![](/Images/Unicode/dbYaml.png)
 > 
+> There we go, we have SQL credentials for user code.
+> We could try to SSH that user with that password and actually log into the machine as user code, so that's awesome, now we have a foothold! 
+>
+> ![](/Images/Unicode/sshConfirm.png)
 > 
-> 
-> 
-> 
-> 
+> # Privilege Escalation
 > 
 > 
 > 
