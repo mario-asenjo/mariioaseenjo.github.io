@@ -5,6 +5,12 @@
 >
 > [Lame Writeup - HackTheBox](/HackTheBox/Lame.md)
 > 
+> [BrainFuck - HackTheBox](/HackTheBox/Brainfuck.md)
+> 
+> [Shocker - HackTheBox](/HackTheBox/Shocker.md)
+> 
+> [Legacy - HackTheBox](/HackTheBox/Legacy.md)
+> 
 > [Shibboleth WriteUp - HackTheBox](/HackTheBox/Shibboleth.md)
 > 
 > [Pikaboo Writeup - HackTheBox](/HackTheBox/Pikaboo.md)
