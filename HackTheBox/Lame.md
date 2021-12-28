@@ -65,9 +65,15 @@
 > 
 > We check for publicly available exploits for `vsftpd 2.3.4`, we'll be using `searchsploit`.
 >
+> ![](/Images/Lame/searchsploit.png)
+> 
+> Non of this exploits work for our target, so we will start enumerating `samba`, as we can check in the `nmap` output, we are looking for samba 3.0.20 version which is an old one, so it must be easy to find one exploit that works for us.
+> 
+> We do a google search for this version for samba and we find the next links.
+> 
 > ![](/Images/Lame/usermapSearch.png)
 > 
-> We find this exploit, which is built in python3, that we are going to copy the raw source code and create a file in our local machine, so we can try it with out victim's machine.
+> We find this `usermap` exploit, which is built in python3, that we are going to copy the raw source code and create a file in our local machine, so we can try it with out victim's machine.
 > 
 > ![](/Images/Lame/usermapRaw.png)
 > 
