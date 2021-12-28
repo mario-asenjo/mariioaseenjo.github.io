@@ -3,6 +3,8 @@
 
 > ## Hack the Box Writeups
 >
+> [Lame Writeup - HackTheBox](/HackTheBox/Lame.md)
+> 
 > [Shibboleth WriteUp - HackTheBox](/HackTheBox/Shibboleth.md)
 > 
 > [Pikaboo Writeup - HackTheBox](/HackTheBox/Pikaboo.md)
