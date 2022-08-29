@@ -16,6 +16,8 @@
 > [Pikaboo Writeup - HackTheBox](/HackTheBox/Pikaboo.md)
 >
 > [Unicode Writeup - HackTheBox](/HackTheBox/Unicode.md)
+> 
+> [RedPanda Writeup - HackTheBox](/HackTheBox/RedPanda.md)
 
 > ## Try Hack Me Rooms Writeups
 > 
