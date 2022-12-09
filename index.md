@@ -4,6 +4,6 @@
 > ## [**HackTheBox Writeups**](/HackTheBox/index.md)
 
 > ## [**TryHackMe - Rooms Writeups**](/TryHackMe/index.md)
-
-> ### [**TryHackMe - Jr Penetration Tester Path Writeups**](/JrPentester/index.md)
+>
+>> ### [**TryHackMe - Jr Penetration Tester Path Writeups**](/JrPentester/index.md)
  
